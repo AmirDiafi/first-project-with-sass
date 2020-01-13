@@ -1,0 +1,117 @@
+/*********
+Start Info
+Website: Using The Sass .scss
+Version: 0.0.1
+The Files: .HTML/.SCSS to .CSS/ .js
+The Developer: Amir Diafi
+
+**********/
+
+// Start Import The Files
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixins';
+
+
+$textleft: right;
+$textright: left;
+
+$floatleft: right;
+$floatright: left;
+
+
+header{
+    .logo{
+        float: $floatleft;
+    }
+    .navbar{
+        float: $floatright;
+        @include maxSmall {
+            
+        }
+
+        li{
+            float: $floatleft;
+            @include maxMobile {
+                text-align: $floatleft;
+            }
+            
+        }
+    }
+}
+
+.services{
+        .row{
+            .item{
+                text-align: $textleft;
+                h3{
+                    text-align: $textleft; 
+                }
+                a {
+                    &::#{$leftChevron} {
+                        content: '#{$chevronLeft}';
+    
+                    } 
+                }
+            }
+        }
+    }
+
+// Start Our Team
+
+.our-plays{
+    h3{
+        text-align: $textleft;
+    }
+
+    p{
+        text-align: $textleft;
+    }
+}
+
+
+// start Lorem Ipsum
+
+.lorem-ipsum{
+    .row{
+        .box{
+            &:not(:last-of-type){
+                margin-left: 15px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+
+
+// Start Footer
+
+footer{
+    .container{
+        .posts{
+            text-align: $textleft;
+            article{
+                text-align: $textleft;
+            }
+        }
+        .company-details{
+            text-align: $textleft;
+        }
+    }
+
+ 
+}
+
+.copyright{
+    .container{
+        .right{
+            text-align: $textleft;
+            width: 100%;
+        }
+        .developer{
+            text-align: $textright;
+            
+        }
+    }
+}

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*********
+Start Info
+Website: Using The Sass .scss
+Version: 0.0.1
+The Files: .HTML/.SCSS to .CSS/ .js
+The Developer: Amir Diafi
+
+**********/
+/**
+*** Media Query Mixin For Help Only
+*** Demo Version Only For The Course
+**/
+.element {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+/**
+*** Overlay Mixin
+**/
+header .logo {
+  float: right;
+}
+
+header .navbar {
+  float: left;
+}
+
+header .navbar li {
+  float: right;
+}
+
+@media (max-width: 767px) {
+  header .navbar li {
+    text-align: right;
+  }
+}
+
+.services .row .item {
+  text-align: right;
+}
+
+.services .row .item h3 {
+  text-align: right;
+}
+
+.services .row .item a::after {
+  content: "";
+}
+
+.our-plays h3 {
+  text-align: right;
+}
+
+.our-plays p {
+  text-align: right;
+}
+
+.lorem-ipsum .row .box:not(:last-of-type) {
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+footer .container .posts {
+  text-align: right;
+}
+
+footer .container .posts article {
+  text-align: right;
+}
+
+footer .container .company-details {
+  text-align: right;
+}
+
+.copyright .container .right {
+  text-align: right;
+  width: 100%;
+}
+
+.copyright .container .developer {
+  text-align: left;
+}
+/*# sourceMappingURL=homepage-rtl.css.map */

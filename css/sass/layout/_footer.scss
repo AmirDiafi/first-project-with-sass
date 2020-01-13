@@ -1,0 +1,132 @@
+// Start Footer
+
+footer{
+    background-color: #e2e2e2;
+    margin: 50px auto 0;
+    padding: 50px 0;
+    .container{
+        color:#333;
+        display: flex;
+        @include maxSmall {
+            display: block;
+        }
+        .posts{
+            margin-right: 20px;
+            width: 50%;
+            text-align: $textleft;
+            @include maxSmall {
+                width: 100%;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+            h2{
+                margin-top: 0;
+            }
+            article{
+                display: flex;
+                margin-top: 20px;
+                text-align: $textleft;
+                img{
+                    width: 30%;
+                    height: 120px;
+                    padding: 4px;
+                    border: 1px solid #999;
+                }
+                .info{
+                    width: 70%;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                    h3{
+                        margin: 0;
+                        color: $mainColor
+                    }
+                    p{
+                        margin-top: 10px;
+                        color: $greyColor
+                    }
+                }
+            }
+        }
+        .company-details{
+            margin-right: 20px;
+            width: 25%;
+            text-align: $textleft;
+            @include maxSmall {
+             width: 100%   
+            }
+            h2{
+                margin-top: 0;
+            }
+            .about-company,
+            .contact-details,
+            .work-time {
+                margin-top: 15px;
+                p{
+                    margin: 5px 0;
+                    color: $greyColor;
+                    span:last-of-type{
+                        color: $mainColor;
+                    }
+                }
+            }
+            .work-time{
+                h4{
+                    margin: 5px 0;
+                }
+
+            }
+        }
+    }
+
+    .contact{
+        width: 25%;
+        @include maxSmall {
+            width: 100%
+        }
+        h2{
+            margin-top: 0;
+        }
+
+        form{
+            input{
+                margin-bottom: 5px;
+            }
+            textarea{
+                margin-bottom: 10px;
+            }
+
+        }
+    }
+ 
+}
+
+.copyright{
+    background: #e2e2e2;
+    margin: 0;
+    padding: 10px 0;
+    .container{
+        border-top: 1px solid $greyColor;
+        display: flex;
+        justify-content: start;
+        color: #333;
+        @include maxSmall {
+            display: block;
+            text-align: center;
+        }
+        .right{
+            text-align: $textleft;
+            width: 100%;
+        }
+        .developer{
+            text-align: $textright;
+            width: 100%;
+            i:first-child{
+                color :red
+            }
+            i:last-child{
+                color: #360c02
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,136 @@
+.services{
+    text-align: center;
+    .row{
+        display: flex;
+        justify-content: center;
+        @include maxSmall {
+            display: block;
+        }
+        .item{
+            width: (100% / 3);
+            text-align: $textleft;
+            &:not(:last-of-type){
+                padding-right: 20px;
+            }
+            @include maxSmall {
+                width: 50%;
+                text-align: center;
+                margin: 30px auto;
+                padding: 0;
+            }
+            h3{
+                color: #555;
+                text-align: $textleft;
+                @include maxMobile {
+                    font-size: $mainSize + 5;
+                }
+                i{
+                    color :#333;
+                    display: inline-block;
+                    @include maxMobile {
+                        margin: 10px auto;
+                        display: block;
+                        font-size: ($mainSize + 20);
+                    }
+                } 
+
+            }
+            p{
+                color: $greyColor;
+            }
+            a {
+                color: $mainColor;
+                &::#{$leftChevron} {
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    content: '#{$chevronRight}';
+                    color :$mainColor;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    display: inline-block;
+
+                } 
+            }
+        }
+    }
+}
+// Start Our Team
+
+.our-plays{
+    text-align: center;
+    .row{
+        display: flex;
+        justify-content: center;
+        @include maxSmall {
+            display: block;
+        }
+        .item{
+            width: (100% / 5);
+            margin: 70px auto;
+            @include maxSmall {
+                width: (100% / 2);
+            }
+            h3{
+                color: #999;
+                text-align: $textleft;
+                margin: 10px 0;
+                span{
+                    color: #555
+                }
+            }
+            img{
+                width: 100%;
+                height: 150px;
+                padding: 4px;
+                border: 1px solid $greyColor + #333
+            }
+            p{
+                margin: 0 0 15px;
+                text-align: $textleft;
+                color :$greyColor;
+                line-height: 1.5;
+            }
+            ul{
+                display: flex;
+                justify-content: space-around;
+                li{
+                    color: $greyColor;
+                    cursor: pointer;
+                    @include prefixer (transition, all .5s linear, moz webkit ms o);
+                    &:hover{
+                        color: #333
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+// start Lorem Ipsum
+
+.lorem-ipsum{
+    .row{
+        display: flex;
+        justify-content: space-between;
+        @include maxSmall {
+            display: block;
+        }
+        .box{
+            width: (100% / 3);
+            height: 300px;
+            &:not(:last-of-type){
+                margin-right: 15px;
+            }
+            @include maxSmall {
+                width: 100%;
+                margin: 50px auto;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

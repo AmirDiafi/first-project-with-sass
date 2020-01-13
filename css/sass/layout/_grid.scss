@@ -1,0 +1,22 @@
+* { 
+    @include prefixer(box-sizing, border-box, webkit moz);
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    overflow: hidden;
+    @include maxMobile {
+    }
+    @include minSmall {
+        width: 750px;
+    }
+    @include minMidium {
+        width: 970px;
+    }
+    @include minLarge {
+        width: 1170px;
+    }
+}
+

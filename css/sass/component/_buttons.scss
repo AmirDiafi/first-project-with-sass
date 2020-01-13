@@ -1,0 +1,52 @@
+.main-button{
+    background: rgba($mainColor, .8);
+    color: $whiteColor;
+    padding: 10px 20px;
+    border: none;
+    border-radius: $borderRadius;
+    float: $floatright;
+    width: 100px;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include prefixer(transition, all .5s linear, webkit moz ms o);
+    &:hover{
+        background-color: $mainColor
+    }
+    @include maxSmall {
+        width: 100%
+    }        
+
+}
+
+.collapse-btn{
+    position: absolute;
+    background: $mainColor;
+    width: 50px;
+    height: 50px;
+    top: 40px;
+    #{$floatright}: 20px;
+    border-radius: $borderRadius;
+    display: none;
+    cursor: pointer;
+    z-index: 3;
+    @include maxMobile{
+        display: block;
+    }
+    span{
+        width: 80%;
+        background-color: #FFF;
+        display: block;
+        height: 2px;
+        margin: 10px auto;
+        @include prefixer(transition, all .5s linear, webkit moz)
+    }
+    span.collapsed:first-child{
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    span.collapsed:nth-child(2){
+        transform: rotateX(90deg);
+    }
+    span.collapsed:last-child{
+        transform: rotate(45deg) translate(-6px, -7px);
+    }
+}

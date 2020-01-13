@@ -1,0 +1,24 @@
+/*********
+Start Info
+Website: Using The Sass .scss
+Version: 0.0.1
+The Files: .HTML/.SCSS to .CSS/ .js
+The Developer: Amir Diafi
+
+**********/
+
+// Start Import The Files
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixins';
+@import 'sass/helpers/functions';
+@import 'sass/component/buttons';
+@import 'sass/component/inputs';
+@import 'sass/component/heading';
+@import 'sass/pages/globalpage';
+
+@import 'sass/layout/grid';
+@import 'sass/layout/header';
+@import 'sass/layout/slider';
+@import 'sass/layout/footer';
+@import 'sass/pages/homepage';
+
